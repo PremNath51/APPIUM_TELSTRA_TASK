@@ -119,7 +119,7 @@ public class SendEmailConfiguration
 	    attachFiles[0] = reportPath+"."+"zip";
 	  
 	    
-	    try ƒ
+	    try 
 	    {
 	    	fz.ZipFolder_method();
 	    	Thread.sleep(8000);

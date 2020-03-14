@@ -40,13 +40,13 @@ public class ExtentRepotEx extends ConfigClass
 		 ConfigClass.ConfigFileReader();
 		
 		
-		 	String foldername=properties.getProperty("reportPath")+"\\Report_"+timestamp;
+		 	String foldername=properties.getProperty("reportPath")+"/Report_"+timestamp;
 		    File f1=new File(foldername);
 		    @SuppressWarnings("unused")
 			String newfolder=Boolean.toString(f1.mkdir());
 		    
-		extent=new ExtentReports(properties.getProperty("reportPath")+"\\Report_"+timestamp+"\\WiproTest_"+timestamp+".html",false);
-		extent.loadConfig(new File(System.getProperty("user.dir")+"\\extent-config.xml"));
+		extent=new ExtentReports(properties.getProperty("reportPath")+"/Report_"+timestamp+"/WiproTest_"+timestamp+".html",false);
+		extent.loadConfig(new File(System.getProperty("user.dir")+"/extent-config.xml"));
 	}
 			@BeforeMethod
 			public  void reportconfiguration(Method method)

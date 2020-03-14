@@ -9,7 +9,7 @@ public class CustomerSignin
 	// Finding WebElement id in the application screen
 	
 	@FindBy(xpath="//*[contains(text(), 'Already a customer? Sign In')]")
-	private WebElement createnewaccount;
+	private WebElement createNewAccount;
 	
 	@FindBy(xpath="//*[contains(text(), 'Mobile number or Email')]")
 	private WebElement mobileNumber;
@@ -28,10 +28,10 @@ public class CustomerSignin
 	
 	public void CustomerSignin(String Mbl, String paswrd)
 	{
-		Createnewaccount.click();
-		MobileNumber.sendKeys(Mbl);
-		continueflow.click();
-		AccountPassword.sendKeys(paswrd);
+		createNewAccount.click();
+		mobileNumber.sendKeys(Mbl);
+		continueFlow.click();
+		accountPassword.sendKeys(paswrd);
 		loginClick.click();
 	}
 	

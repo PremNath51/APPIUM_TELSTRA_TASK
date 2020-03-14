@@ -54,7 +54,7 @@ public class AmazonTest extends ExtentRepotEx
 
     {
 	  //Location of the application
-   	    File app = new File("/Users/[premnathrajasekaran]/Library/Caches/com.apple.Safari”, "Amazon_shopping.apk");
+   	    File app = new File("/Users/premnathrajasekaran/Library/Caches/com.apple.Safari", "Amazon_shopping.apk");
    	 
    	    capabilities.setCapability("device","Android");
 	    capabilities.setCapability(MobileCapabilityType.PLATFORM_NAME,"Android");
@@ -62,7 +62,7 @@ public class AmazonTest extends ExtentRepotEx
    	    capabilities.setCapability("app", app.getAbsolutePath());
 
    	    capabilities.setCapability("platformName","Android");
-        capabilities.setCapability("UDID", "WSNNJR7654RFDSA7"); //In Command line search for adb devices to get the device details
+        capabilities.setCapability("UDID", "RF8M53BJ4WF"); //In Command line search for adb devices to get the device details
 	
    	    capabilities.setCapability(CapabilityType.VERSION,"9.0");
  	    capabilities.setCapability("orientation", "PORTRAIT");
@@ -98,7 +98,7 @@ public class AmazonTest extends ExtentRepotEx
 			     cmn.Info("Create a new Amazon login Account");
 			     
 			    //Call User login Page object 
-			     acnt.SignIn(Mobile_Number, Password);
+			     acnt.CustomerSignin(Mobile_Number, Password);
 			     
 			       WebDriverWait wait = new WebDriverWait (driver, 5540);
 		  		   wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//*[contains(text(), 'Shop by Category')]")));
@@ -122,7 +122,7 @@ public class AmazonTest extends ExtentRepotEx
 		   }
     }
 	
-	//This function will "search for an item and add to cart and purchase it”
+	//This function will "search for an item and add to cart and purchase it"
 	@Test(priority = 2, dataProvider = "Authentication")
     public void PurchaseProduct(String Mobile_Number, String Password, String Item_Name, String Card_Number) throws Exception
     { 
