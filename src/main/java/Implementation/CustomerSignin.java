@@ -24,7 +24,7 @@ public class CustomerSignin
 	private WebElement loginClick;
 	
 	
-	// Functions for actions
+	// Functions for actions is added 
 	
 	public void CustomerSignin(String Mbl, String paswrd)
 	{
