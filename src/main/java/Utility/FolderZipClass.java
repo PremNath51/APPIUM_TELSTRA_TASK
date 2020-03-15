@@ -9,7 +9,7 @@ import Utility.ExtentRepotEx;
 
 public class FolderZipClass 
 {
-	 public String reportPath="Users/premnathrajasekaran/Wipro-Workspace/Test/Reports/Report_"+ExtentRepotEx.timestamp;
+	 public String reportPath="/Users/premnathrajasekaran/documents/Wipro-Workspace/WiproSource/Reports/Report_"+ExtentRepotEx.timestamp;
   
 	public  void ZipFolder_method() throws Exception 
 	{

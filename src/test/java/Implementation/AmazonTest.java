@@ -54,7 +54,7 @@ public class AmazonTest extends ExtentRepotEx
 
     {
 	  //Location of the application
-   	    File app = new File("/Users/premnathrajasekaran/Library/Caches/com.apple.Safari", "Amazon_shopping.apk");
+   	    File app = new File("/Users/premnathrajasekaran/documents", "Amazon_shopping.apk");
    	 
    	    capabilities.setCapability("device","Android");
 	    capabilities.setCapability(MobileCapabilityType.PLATFORM_NAME,"Android");
@@ -86,7 +86,7 @@ public class AmazonTest extends ExtentRepotEx
      }
     
 	// This Function is used to “Login to amazon mobile application"
-	@Test(priority = 1, dataProvider = "Login Authentication")
+	@Test(priority = 1, dataProvider = "Authentication")
     public void CustomerSignin(String Mobile_Number, String Password, String Item_Name, String Card_Number) throws Exception
     { 
 		   try
@@ -210,7 +210,7 @@ public class AmazonTest extends ExtentRepotEx
     {   
 		
  	     String POS_LoginExcel=properties.getProperty("LoginExcel_DataPath");
- 	     String[][] testObjArray = LoginUtils.getTableArray(POS_LoginExcel+"\\AmazonData.xlsx","Sheet1");
+ 	     String[][] testObjArray = LoginUtils.getTableArray(POS_LoginExcel+"/AmazonData.xlsx","Sheet1");
  	     return testObjArray;
  	     
     }

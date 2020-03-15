@@ -114,7 +114,7 @@ public class SendEmailConfiguration
 	    String subject = "Wipro Mobile Automation Report";
 	    String message = "Wipro mobile automation report for UAT Environment";
 
-        String reportPath="/Users/premnathrajasekaran/Wipro-Workspace/Test/Reports/Report_"+ExtentRepotEx.timestamp;
+        String reportPath="/Users/premnathrajasekaran/documents/Wipro-Workspace/WiproSource/Reports/Report_"+ExtentRepotEx.timestamp;
 	    String[] attachFiles = new String[2];
 	    attachFiles[0] = reportPath+"."+"zip";
 	  

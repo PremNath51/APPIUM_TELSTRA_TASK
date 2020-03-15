@@ -19,7 +19,7 @@ public class ImagecaptureConfig extends ExtentRepotEx
 	 File output=null;
 	 
 	 public static String format = "jpg";
-	 public static String imagepath = "Users/premnathrajasekaran/Wipro-Workspace/Test/Reports/Report_"+ExtentRepotEx.timestamp+"/Screenshot"+ExtentRepotEx.timestamp+"." + format;
+	 public static String imagepath = "/Users/premnathrajasekaran/documents/Wipro-Workspace/WiproSource/Reports/Report_"+ExtentRepotEx.timestamp+"/Screenshot"+ExtentRepotEx.timestamp+"." + format;
 
 	  public void capturesnapshot_Fail()
 	  {
@@ -50,7 +50,7 @@ public class ImagecaptureConfig extends ExtentRepotEx
 			Rectangle screenRect = new Rectangle(Toolkit.getDefaultToolkit().getScreenSize());
 
 			screenFullImage = robot.createScreenCapture(screenRect);
-			output=new File("Users/premnathrajasekaran/Wipro-Workspace/Test/Reports/Report_"+ExtentRepotEx.timestamp+"/Screenshot_"+System.currentTimeMillis()+ "." + "jpg");
+			output=new File("/Users/premnathrajasekaran/documents/Wipro-Workspace/WiproSource/Reports/Report_"+ExtentRepotEx.timestamp+"/Screenshot_"+System.currentTimeMillis()+ "." + "jpg");
             ImageIO.write(screenFullImage, "jpg",output);
             Thread.sleep(2000);
         } 
