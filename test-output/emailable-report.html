@@ -9,20 +9,20 @@
 <table>
 <tr><th>Test</th><th># Passed</th><th># Skipped</th><th># Retried</th><th># Failed</th><th>Time (ms)</th><th>Included Groups</th><th>Excluded Groups</th></tr>
 <tr><th colspan="8">Default suite</th></tr>
-<tr><td><a href="#t0">Default test</a></td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td class="num attn">2</td><td class="num">68,463</td><td></td><td></td></tr>
+<tr><td><a href="#t0">Default test</a></td><td class="num">1</td><td class="num">0</td><td class="num">0</td><td class="num attn">6</td><td class="num">65,798</td><td></td><td></td></tr>
 </table>
-<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Default suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Default test &#8212; failed (configuration methods)</th></tr><tr class="failedeven"><td rowspan="1">Implementation.AmazonTest</td><td><a href="#m0">closeBrowser</a></td><td rowspan="1">1584187945185</td><td rowspan="1">1</td></tr><tr><th colspan="4">Default test &#8212; failed</th></tr><tr class="failedeven"><td rowspan="2">Implementation.AmazonTest</td><td><a href="#m1">CustomerSignin</a></td><td rowspan="1">1584187935356</td><td rowspan="1">7486</td></tr><tr class="failedeven"><td><a href="#m2">PurchaseProduct</a></td><td rowspan="1">1584187942919</td><td rowspan="1">2261</td></tr><tr><th colspan="4">Default test &#8212; skipped (configuration methods)</th></tr><tr class="skippedeven"><td rowspan="1">Implementation.AmazonTest</td><td><a href="#m3">teanDown</a></td><td rowspan="1">1584187945250</td><td rowspan="1">-1584187945250</td></tr></tbody>
+<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Default suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Default test &#8212; failed (configuration methods)</th></tr><tr class="failedeven"><td rowspan="1">Implementation.AmazonTest</td><td><a href="#m0">closeApplication</a></td><td rowspan="1">1584447004491</td><td rowspan="1">1</td></tr><tr><th colspan="4">Default test &#8212; failed</th></tr><tr class="failedeven"><td rowspan="6">Implementation.AmazonTest</td><td><a href="#m1">CustomerSignin</a></td><td rowspan="1">1584446994888</td><td rowspan="1">3428</td></tr><tr class="failedeven"><td><a href="#m2">ProductSearch_Result</a></td><td rowspan="1">1584446998361</td><td rowspan="1">1189</td></tr><tr class="failedeven"><td><a href="#m3">ReachCheckoutSummaryVerifProducts</a></td><td rowspan="1">1584447003273</td><td rowspan="1">1214</td></tr><tr class="failedeven"><td><a href="#m4">SelectProductSearchResult</a></td><td rowspan="1">1584446999597</td><td rowspan="1">1175</td></tr><tr class="failedeven"><td><a href="#m5">VerifyProductDetailsWithShoppingCart</a></td><td rowspan="1">1584447002039</td><td rowspan="1">1203</td></tr><tr class="failedeven"><td><a href="#m6">ViewProductDetailPageWithAddCart</a></td><td rowspan="1">1584447000821</td><td rowspan="1">1180</td></tr><tr><th colspan="4">Default test &#8212; skipped (configuration methods)</th></tr><tr class="skippedeven"><td rowspan="1">Implementation.AmazonTest</td><td><a href="#m7">teanDown</a></td><td rowspan="1">1584447004558</td><td rowspan="1">-1584447004558</td></tr><tr><th colspan="4">Default test &#8212; passed</th></tr><tr class="passedeven"><td rowspan="1">Implementation.AmazonTest</td><td><a href="#m8">LaunchAmazonApp</a></td><td rowspan="1">1584446990891</td><td rowspan="1">2999</td></tr></tbody>
 </table>
-<h2>Default test</h2><h3 id="m0">Implementation.AmazonTest#closeBrowser</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.WebDriverException: No command or response codec has been defined. Unable to proceed
+<h2>Default test</h2><h3 id="m0">Implementation.AmazonTest#closeApplication</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.WebDriverException: No command or response codec has been defined. Unable to proceed
 Build info: version: &apos;3.14.0&apos;, revision: &apos;aacccce0&apos;, time: &apos;2018-08-02T20:19:58.91Z&apos;
-System info: host: &apos;192&apos;, ip: &apos;0.0.0.192&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;10.15.3&apos;, java.version: &apos;13.0.2&apos;
+System info: host: &apos;192-168-1-103.tpgi.com.au&apos;, ip: &apos;192.168.1.103&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;10.15.3&apos;, java.version: &apos;13.0.2&apos;
 Driver info: driver.version: RemoteWebDriver
 	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:148)
 	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:548)
 	at io.appium.java_client.AppiumDriver.execute(AppiumDriver.java:180)
 	at io.appium.java_client.AppiumDriver.execute(AppiumDriver.java:185)
 	at org.openqa.selenium.remote.RemoteWebDriver.quit(RemoteWebDriver.java:448)
-	at Implementation.AmazonTest.closeBrowser(AmazonTest.java:221)
+	at Implementation.AmazonTest.closeApplication(AmazonTest.java:336)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -53,7 +53,7 @@ Driver info: driver.version: RemoteWebDriver
 <h3 id="m1">Implementation.AmazonTest#CustomerSignin</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th><th>Parameter #3</th><th>Parameter #4</th></tr><tr class="param stripe"><td>7405161347</td><td>Ajit@123</td><td>65-inch TV</td><td>4462030000000000</td></tr><tr><th colspan="4">Exception</th></tr><tr><td colspan="4"><div class="stacktrace">java.lang.AssertionError: Login issue occured login amazon account
 	at org.testng.AssertJUnit.fail(AssertJUnit.java:47)
 	at org.testng.AssertJUnit.assertTrue(AssertJUnit.java:20)
-	at Implementation.AmazonTest.CustomerSignin(AmazonTest.java:120)
+	at Implementation.AmazonTest.CustomerSignin(AmazonTest.java:129)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -83,10 +83,10 @@ Driver info: driver.version: RemoteWebDriver
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
 </div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m2">Implementation.AmazonTest#PurchaseProduct</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th><th>Parameter #3</th><th>Parameter #4</th></tr><tr class="param stripe"><td>7405161347</td><td>Ajit@123</td><td>65-inch TV</td><td>4462030000000000</td></tr><tr><th colspan="4">Exception</th></tr><tr><td colspan="4"><div class="stacktrace">java.lang.AssertionError: Error occured while item added to cart.
+<h3 id="m2">Implementation.AmazonTest#ProductSearch_Result</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th><th>Parameter #3</th><th>Parameter #4</th></tr><tr class="param stripe"><td>7405161347</td><td>Ajit@123</td><td>65-inch TV</td><td>4462030000000000</td></tr><tr><th colspan="4">Exception</th></tr><tr><td colspan="4"><div class="stacktrace">java.lang.AssertionError: Could not able to find the 50-60 inch TV Product
 	at org.testng.AssertJUnit.fail(AssertJUnit.java:47)
 	at org.testng.AssertJUnit.assertTrue(AssertJUnit.java:20)
-	at Implementation.AmazonTest.PurchaseProduct(AmazonTest.java:202)
+	at Implementation.AmazonTest.ProductSearch_Result(AmazonTest.java:155)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -116,6 +116,139 @@ Driver info: driver.version: RemoteWebDriver
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
 </div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m3">Implementation.AmazonTest#teanDown</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m3">Implementation.AmazonTest#ReachCheckoutSummaryVerifProducts</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th><th>Parameter #3</th><th>Parameter #4</th></tr><tr class="param stripe"><td>7405161347</td><td>Ajit@123</td><td>65-inch TV</td><td>4462030000000000</td></tr><tr><th colspan="4">Exception</th></tr><tr><td colspan="4"><div class="stacktrace">java.lang.AssertionError: technical difficulties Issues Faced Please try again after sometime
+	at org.testng.AssertJUnit.fail(AssertJUnit.java:47)
+	at org.testng.AssertJUnit.assertTrue(AssertJUnit.java:20)
+	at Implementation.AmazonTest.ReachCheckoutSummaryVerifProducts(AmazonTest.java:317)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:567)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:134)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:597)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:816)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1507)
+	at org.testng.TestRunner.privateRun(TestRunner.java:766)
+	at org.testng.TestRunner.run(TestRunner.java:587)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:286)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1187)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1109)
+	at org.testng.TestNG.runSuites(TestNG.java:1039)
+	at org.testng.TestNG.run(TestNG.java:1007)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m4">Implementation.AmazonTest#SelectProductSearchResult</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th><th>Parameter #3</th><th>Parameter #4</th></tr><tr class="param stripe"><td>7405161347</td><td>Ajit@123</td><td>65-inch TV</td><td>4462030000000000</td></tr><tr><th colspan="4">Exception</th></tr><tr><td colspan="4"><div class="stacktrace">java.lang.AssertionError: Could not able to find the Search Product
+	at org.testng.AssertJUnit.fail(AssertJUnit.java:47)
+	at org.testng.AssertJUnit.assertTrue(AssertJUnit.java:20)
+	at Implementation.AmazonTest.SelectProductSearchResult(AmazonTest.java:180)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:567)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:134)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:597)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:816)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1507)
+	at org.testng.TestRunner.privateRun(TestRunner.java:766)
+	at org.testng.TestRunner.run(TestRunner.java:587)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:286)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1187)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1109)
+	at org.testng.TestNG.runSuites(TestNG.java:1039)
+	at org.testng.TestNG.run(TestNG.java:1007)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m5">Implementation.AmazonTest#VerifyProductDetailsWithShoppingCart</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th><th>Parameter #3</th><th>Parameter #4</th></tr><tr class="param stripe"><td>7405161347</td><td>Ajit@123</td><td>65-inch TV</td><td>4462030000000000</td></tr><tr><th colspan="4">Exception</th></tr><tr><td colspan="4"><div class="stacktrace">java.lang.AssertionError: Could not able to find the Search Product
+	at org.testng.AssertJUnit.fail(AssertJUnit.java:47)
+	at org.testng.AssertJUnit.assertTrue(AssertJUnit.java:20)
+	at Implementation.AmazonTest.VerifyProductDetailsWithShoppingCart(AmazonTest.java:234)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:567)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:134)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:597)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:816)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1507)
+	at org.testng.TestRunner.privateRun(TestRunner.java:766)
+	at org.testng.TestRunner.run(TestRunner.java:587)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:286)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1187)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1109)
+	at org.testng.TestNG.runSuites(TestNG.java:1039)
+	at org.testng.TestNG.run(TestNG.java:1007)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m6">Implementation.AmazonTest#ViewProductDetailPageWithAddCart</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th><th>Parameter #3</th><th>Parameter #4</th></tr><tr class="param stripe"><td>7405161347</td><td>Ajit@123</td><td>65-inch TV</td><td>4462030000000000</td></tr><tr><th colspan="4">Exception</th></tr><tr><td colspan="4"><div class="stacktrace">java.lang.AssertionError: Could not able to find the Search Product
+	at org.testng.AssertJUnit.fail(AssertJUnit.java:47)
+	at org.testng.AssertJUnit.assertTrue(AssertJUnit.java:20)
+	at Implementation.AmazonTest.ViewProductDetailPageWithAddCart(AmazonTest.java:207)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:567)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:134)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:597)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:816)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1507)
+	at org.testng.TestRunner.privateRun(TestRunner.java:766)
+	at org.testng.TestRunner.run(TestRunner.java:587)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:286)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1187)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1109)
+	at org.testng.TestNG.runSuites(TestNG.java:1039)
+	at org.testng.TestNG.run(TestNG.java:1007)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m7">Implementation.AmazonTest#teanDown</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m8">Implementation.AmazonTest#LaunchAmazonApp</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
 </body>
 </html>

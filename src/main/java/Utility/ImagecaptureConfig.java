@@ -10,6 +10,8 @@ import java.io.File;
 import javax.imageio.ImageIO;
 import Utility.CommonFunctions;
 import Utility.ExtentRepotEx;
+import GlobalVariables.amazon_Var;
+
 
 public class ImagecaptureConfig extends ExtentRepotEx
 {
@@ -19,7 +21,7 @@ public class ImagecaptureConfig extends ExtentRepotEx
 	 File output=null;
 	 
 	 public static String format = "jpg";
-	 public static String imagepath = "/Users/premnathrajasekaran/documents/Wipro-Workspace/WiproSource/Reports/Report_"+ExtentRepotEx.timestamp+"/Screenshot"+ExtentRepotEx.timestamp+"." + format;
+	 public static String imagepath = amazon_Var.PUBLIC_IMG_PATH;
 
 	  public void capturesnapshot_Fail()
 	  {
@@ -50,7 +52,7 @@ public class ImagecaptureConfig extends ExtentRepotEx
 			Rectangle screenRect = new Rectangle(Toolkit.getDefaultToolkit().getScreenSize());
 
 			screenFullImage = robot.createScreenCapture(screenRect);
-			output=new File("/Users/premnathrajasekaran/documents/Wipro-Workspace/WiproSource/Reports/Report_"+ExtentRepotEx.timestamp+"/Screenshot_"+System.currentTimeMillis()+ "." + "jpg");
+			output=new File(amazon_Var.CAPT_SC_URL);
             ImageIO.write(screenFullImage, "jpg",output);
             Thread.sleep(2000);
         } 
@@ -64,7 +66,7 @@ public class ImagecaptureConfig extends ExtentRepotEx
           try
           {
         	   CommonFunctions cf=new CommonFunctions();
-        	   cf.pass(detail+ test.addScreenCapture(output.getAbsolutePath().replace("sers/premnathrajasekaran/Wipro-Workspace/Test/Reports/Report_"+ExtentRepotEx.timestamp+"/","")));
+        	   cf.pass(detail+ test.addScreenCapture(output.getAbsolutePath().replace(amazon_Var.REPORT_SNAP_PASS,"")));
         	   Thread.sleep(2000);
         	   
           }catch(Exception e)
@@ -77,7 +79,7 @@ public class ImagecaptureConfig extends ExtentRepotEx
           try
           {
         	   CommonFunctions cf=new CommonFunctions();
-        	   cf.fail(detail+ test.addScreenCapture(output.getAbsolutePath().replace("Users/premnathrajasekaran/Wipro-Workspace/Test/Reports/Report_"+ExtentRepotEx.timestamp+"/","")));
+        	   cf.fail(detail+ test.addScreenCapture(output.getAbsolutePath().replace(amazon_Var.REPORT_SNAP_FAIL+ExtentRepotEx.timestamp+"/","")));
         	   Thread.sleep(1000);
        	  }
           catch(Exception e)

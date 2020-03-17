@@ -13,11 +13,10 @@ import com.relevantcodes.extentreports.ExtentReports;
 import com.relevantcodes.extentreports.ExtentTest;
 import com.relevantcodes.extentreports.LogStatus;
 import Utility.ConfigClass;
-import Utility.SendEmailConfiguration;
+
 // This class will generate the report after the execution
 public class ExtentRepotEx extends ConfigClass
 {
-	
 	public static ExtentReports extent;
 	public static ExtentTest test;
 	public static String timestamp = new SimpleDateFormat("MM-dd-yyyy_HH:mm").format(Calendar.getInstance().getTime()).replaceAll(":", "-");
@@ -38,8 +37,6 @@ public class ExtentRepotEx extends ConfigClass
 	{
 		
 		 ConfigClass.ConfigFileReader();
-		
-		
 		 	String foldername=properties.getProperty("reportPath")+"/Report_"+timestamp;
 		    File f1=new File(foldername);
 		    @SuppressWarnings("unused")
@@ -74,12 +71,8 @@ public class ExtentRepotEx extends ConfigClass
 	@AfterSuite
 	public void teanDown()throws Exception
 	{
-		
 		extent.flush();
 		extent.close();	
-		SendEmailConfiguration sec = new SendEmailConfiguration();
-		sec.sendEmail();
 		Thread.sleep(12000);
-		
 	}
 }

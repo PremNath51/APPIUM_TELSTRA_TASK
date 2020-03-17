@@ -10,13 +10,12 @@ public class CommonFunctions extends ExtentRepotEx
 	 public static Properties properties;
 	 public  static String workingDir = System.getProperty("user.dir");
 	
-//  This class holds the common fuctions for the execution status classes creation
+//  This class holds the common functions for the execution status classes creation
 	
-		public void pass(String details, boolean b) 
-		{
-			// TODO Auto-generated method stub
-			test.log(LogStatus.PASS, details);
-		}
+	public void pass(String details, boolean b) 
+	{
+	   test.log(LogStatus.PASS, details);
+	}
 	public  void skip(String detail)
 	{
 		test.log(LogStatus.SKIP, detail);

@@ -5,12 +5,13 @@ import java.io.FileNotFoundException;
 import java.io.FileReader;
 import java.io.IOException;
 import java.util.Properties;
+import GlobalVariables.amazon_Var;
 
 public class ConfigClass {
 
 	 public static Properties properties;
 	 public static String workingDir = System.getProperty("user.dir");
-	 public static String propertyFilePath=workingDir+"/src/main/java/Utility/Configuraion.properties";
+	 public static String propertyFilePath=workingDir+amazon_Var.WorkPATH;
  
 	// This Function will create/read the config file reader
 	 

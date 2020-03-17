@@ -2,29 +2,30 @@ package Implementation;
 
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
+import GlobalVariables.Amazon_Cus_Sign;
 
 public class CustomerSignin 
 {
 
 	// Finding WebElement id in the application screen
 	
-	@FindBy(xpath="//*[contains(text(), 'Already a customer? Sign In')]")
+	@FindBy(xpath=Amazon_Cus_Sign.CREATE_NEW_ACC)
 	private WebElement createNewAccount;
 	
-	@FindBy(xpath="//*[contains(text(), 'Mobile number or Email')]")
+	@FindBy(xpath=Amazon_Cus_Sign.MOB_EMAIL)
 	private WebElement mobileNumber;
 	
-	@FindBy(xpath="//*[contains(text(), 'Continue')]")
+	@FindBy(xpath=Amazon_Cus_Sign.CONT_FLOW)
 	private WebElement continueFlow;
 	
-	@FindBy(xpath="//*[contains(text(), 'Amazon password')]")
+	@FindBy(xpath=Amazon_Cus_Sign.ACC_PASS)
 	private WebElement accountPassword;
 	
-	@FindBy(xpath="//*[contains(text(), 'Login')]")
+	@FindBy(xpath=Amazon_Cus_Sign.LOGIN)
 	private WebElement loginClick;
 	
 	
-	// Functions for actions
+	// Functions for actions is added 
 	
 	public void CustomerSignin(String Mbl, String paswrd)
 	{
@@ -34,7 +35,6 @@ public class CustomerSignin
 		accountPassword.sendKeys(paswrd);
 		loginClick.click();
 	}
-	
 	
 	
 	public boolean isDisplayed() {

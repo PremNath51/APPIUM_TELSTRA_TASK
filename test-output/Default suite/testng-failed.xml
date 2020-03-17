@@ -7,12 +7,16 @@
         <methods>
           <include name="teanDown"/>
           <include name="reportconfiguration"/>
-          <include name="closeBrowser"/>
+          <include name="ViewProductDetailPageWithAddCart" invocation-numbers="0"/>
           <include name="beforesuitreport"/>
           <include name="CustomerSignin" invocation-numbers="0"/>
-          <include name="PurchaseProduct" invocation-numbers="0"/>
+          <include name="ReachCheckoutSummaryVerifProducts" invocation-numbers="0"/>
+          <include name="ProductSearch_Result" invocation-numbers="0"/>
+          <include name="VerifyProductDetailsWithShoppingCart" invocation-numbers="0"/>
           <include name="baseClass"/>
           <include name="endTest"/>
+          <include name="SelectProductSearchResult" invocation-numbers="0"/>
+          <include name="closeApplication"/>
         </methods>
       </class> <!-- Implementation.AmazonTest -->
     </classes>
